@@ -1,0 +1,12 @@
+https://www.google.com/search?q=lookup+data+table+uipath&oq=lookup+data&aqs=chrome.1.69i57j0l7.4626j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=_pVjwXpWJJcO_9QPC7KPYAg37
+https://www.youtube.com/watch?time_continue=195&v=IffS8VXFilc&feature=emb_logo
+
+https://openweathermap.org/current
+
+https://openweathermap.org/api
+
+https://excelcult.com/how-to-extract-of-data-from-a-json-in-uipath/
+
+https://www.youtube.com/watch?time_continue=17&v=D_RkqNq5nzM&feature=emb_logo
+
+https://www.uipath.com/developers/video-tutorials/application-integration-rest-web-service-json

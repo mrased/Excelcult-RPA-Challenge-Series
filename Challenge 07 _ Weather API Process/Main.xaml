@@ -1,0 +1,429 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="934,701" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="25">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,127</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,127</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="1001,3118" sap2010:WorkflowViewState.IdRef="Sequence_31">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Int32" Name="rowIndex" />
+          <Variable x:TypeArguments="x:Int32" Name="lastRow" />
+          <Variable x:TypeArguments="sd:DataTable" Name="extractedDataForNo" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="959,3026" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" Visible="False" WorkbookPath="City_List.xlsx">
+          <ui:ExcelApplicationScope.Body>
+            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="925,2917" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd:DataTable" Name="extractedData" />
+                  <Variable x:TypeArguments="x:Char" Name="cellColC" />
+                  <Variable x:TypeArguments="x:Char" Name="cellColD" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ExcelReadRange AddHeaders="True" DataTable="[extractedData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="883,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_5" SheetName="Sheet1">
+                  <ui:ExcelReadRange.Range>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:ExcelReadRange.Range>
+                </ui:ExcelReadRange>
+                <Assign sap:VirtualizedContainerService.HintSize="883,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[lastRow]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">[extractedData.Rows.Count]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="883,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Char">[cellColC]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Char">C</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="883,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Char">[cellColD]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Char">D</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[extractedData]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="883,2426" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="833,2279" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LookupDataTable CellValue="{x:Null}" LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[extractedData]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="791,22" sap2010:WorkflowViewState.IdRef="LookupDataTable_6" LookupColumnName="City" LookupValue="[row(0).ToString]" RowIndex="[rowIndex]" />
+                        <ui:ForEachRow CurrentIndex="[lastRow]" DataTable="[extractedData]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="791,1534" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
+                          <ui:ForEachRow.Body>
+                            <ActivityAction x:TypeArguments="sd:DataRow">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowForYes" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="741,1387" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:Int32" Name="index" />
+                                  <Variable x:TypeArguments="x:Int32" Name="rowIndexForYes" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:LookupDataTable CellValue="{x:Null}" LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[extractedData]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="699,22" sap2010:WorkflowViewState.IdRef="LookupDataTable_11" LookupColumnName="City" LookupValue="[rowForYes(0).ToString]" RowIndex="[rowIndexForYes]" />
+                                <If Condition="[rowForYes(1).ToString.Equals(&quot;YES&quot;)]" sap:VirtualizedContainerService.HintSize="699,1233" sap2010:WorkflowViewState.IdRef="If_12">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="454,1086" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:String" Name="apiKey">
+                                          <Variable.Default>
+                                            <Literal x:TypeArguments="x:String">Use Your Own API Key</Literal>
+                                          </Variable.Default>
+                                        </Variable>
+                                        <Variable x:TypeArguments="x:String" Name="restResponse" />
+                                        <Variable x:TypeArguments="njl:JObject" Name="jsonDoc" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="412,61" sap2010:WorkflowViewState.IdRef="WriteLine_32" Text="[rowForYes(0).ToString]" />
+                                      <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="[&quot;http://api.openweathermap.org/data/2.5/weather?q=&quot;+rowForYes(0).ToString+&quot;&amp;appid=&quot;+apiKey]" sap:VirtualizedContainerService.HintSize="412,22" sap2010:WorkflowViewState.IdRef="HttpClient_8" Method="GET" Result="[restResponse]" TimeoutMS="6000">
+                                        <ui:HttpClient.Attachments>
+                                          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                        </ui:HttpClient.Attachments>
+                                        <ui:HttpClient.Cookies>
+                                          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                        </ui:HttpClient.Cookies>
+                                        <ui:HttpClient.Headers>
+                                          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                        </ui:HttpClient.Headers>
+                                        <ui:HttpClient.Parameters>
+                                          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                        </ui:HttpClient.Parameters>
+                                        <ui:HttpClient.UrlSegments>
+                                          <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                        </ui:HttpClient.UrlSegments>
+                                      </ui:HttpClient>
+                                      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="412,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_8" JsonObject="[jsonDoc]" JsonString="[restResponse]" />
+                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="412,51" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                                        <ui:CommentOut.Body>
+                                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="272,153" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_33" Text="[&quot;Kelvin :&quot;+jsonDoc(&quot;main&quot;)(&quot;temp&quot;).ToString]" />
+                                          </Sequence>
+                                        </ui:CommentOut.Body>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:CommentOut>
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="412,61" sap2010:WorkflowViewState.IdRef="WriteLine_34" Text="[&quot;Celcius :&quot;+(cint(jsonDoc(&quot;main&quot;)(&quot;temp&quot;))-273).ToString]" />
+                                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="412,61" sap2010:WorkflowViewState.IdRef="WriteLine_35" Text="[&quot;Humidity :&quot;+jsonDoc(&quot;main&quot;)(&quot;humidity&quot;).ToString]" />
+                                      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,439" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[extractedData.Columns]">
+                                        <ui:ForEach.Body>
+                                          <ActivityAction x:TypeArguments="x:Object">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,306" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                              <Sequence.Variables>
+                                                <Variable x:TypeArguments="sd:DataTable" Name="readRangeForLastRow" />
+                                              </Sequence.Variables>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:ExcelWriteCell Cell="[cellColC+(rowIndexForYes+2).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_17" SheetName="Sheet1" Text="[(cint(jsonDoc(&quot;main&quot;)(&quot;temp&quot;))-273).ToString+&quot;`C&quot;]" />
+                                              <ui:ExcelWriteCell Cell="[cellColD+(rowIndexForYes+2).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_18" SheetName="Sheet1" Text="[jsonDoc(&quot;main&quot;)(&quot;humidity&quot;).ToString+&quot;%&quot;]" />
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </ui:ForEach.Body>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:ForEach>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_6" />
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEachRow.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ForEachRow>
+                        <Assign sap:VirtualizedContainerService.HintSize="791,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[rowIndex]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[lastRow]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <If Condition="[(rowIndex).Equals(lastRow)]" sap:VirtualizedContainerService.HintSize="791,451" sap2010:WorkflowViewState.IdRef="If_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,304" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ExcelReadRange AddHeaders="True" DataTable="[extractedDataForNo]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_6" SheetName="Sheet1">
+                                <ui:ExcelReadRange.Range>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <Literal x:TypeArguments="x:String" Value="" />
+                                  </InArgument>
+                                </ui:ExcelReadRange.Range>
+                              </ui:ExcelReadRange>
+                              <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[extractedDataForNo]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                                <ui:ForEachRow.Body>
+                                  <ActivityAction x:TypeArguments="sd:DataRow">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowForNo" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="242,205" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="x:Int32" Name="rowIndexForNo" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LookupDataTable CellValue="{x:Null}" LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[extractedDataForNo]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="LookupDataTable_9" LookupColumnName="City" LookupValue="[rowForNo(0).ToString]" RowIndex="[rowIndexForNo]" />
+                                      <If Condition="[rowForNo(1).ToString.Equals(&quot;NO&quot;)]" sap:VirtualizedContainerService.HintSize="699,1236" sap2010:WorkflowViewState.IdRef="If_8">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="454,1088" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:String" Default="fc99256e952bd58f7b1e0e2eb455f058" Name="apiKey" />
+                                              <Variable x:TypeArguments="x:String" Name="restResponse" />
+                                              <Variable x:TypeArguments="njl:JObject" Name="jsonDoc" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="412,61" sap2010:WorkflowViewState.IdRef="WriteLine_21" Text="[rowForNo(0).ToString]" />
+                                            <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="[&quot;http://api.openweathermap.org/data/2.5/weather?q=&quot;+rowForNo(0).ToString+&quot;&amp;appid=&quot;+apiKey]" sap:VirtualizedContainerService.HintSize="412,22" sap2010:WorkflowViewState.IdRef="HttpClient_5" Method="GET" Result="[restResponse]" TimeoutMS="6000">
+                                              <ui:HttpClient.Attachments>
+                                                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                              </ui:HttpClient.Attachments>
+                                              <ui:HttpClient.Cookies>
+                                                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                              </ui:HttpClient.Cookies>
+                                              <ui:HttpClient.Headers>
+                                                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                              </ui:HttpClient.Headers>
+                                              <ui:HttpClient.Parameters>
+                                                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                              </ui:HttpClient.Parameters>
+                                              <ui:HttpClient.UrlSegments>
+                                                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                              </ui:HttpClient.UrlSegments>
+                                            </ui:HttpClient>
+                                            <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="412,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_5" JsonObject="[jsonDoc]" JsonString="[restResponse]" />
+                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="412,51" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                                              <ui:CommentOut.Body>
+                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="272,153" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_22" Text="[&quot;Kelvin :&quot;+jsonDoc(&quot;main&quot;)(&quot;temp&quot;).ToString]" />
+                                                </Sequence>
+                                              </ui:CommentOut.Body>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:CommentOut>
+                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="412,61" sap2010:WorkflowViewState.IdRef="WriteLine_23" Text="[&quot;Celcius :&quot;+(cint(jsonDoc(&quot;main&quot;)(&quot;temp&quot;))-273).ToString]" />
+                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="412,61" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="[&quot;Humidity :&quot;+jsonDoc(&quot;main&quot;)(&quot;humidity&quot;).ToString]" />
+                                            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,440" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[extractedDataForNo.Columns]">
+                                              <ui:ForEach.Body>
+                                                <ActivityAction x:TypeArguments="x:Object">
+                                                  <ActivityAction.Argument>
+                                                    <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+                                                  </ActivityAction.Argument>
+                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,306" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:ExcelWriteCell Cell="[cellColC+(rowIndexForNo+2).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_11" SheetName="Sheet1" Text="[(cint(jsonDoc(&quot;main&quot;)(&quot;temp&quot;))-273).ToString+&quot;`C&quot;]" />
+                                                    <ui:ExcelWriteCell Cell="[cellColD+(rowIndexForNo+2).ToString]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_12" SheetName="Sheet1" Text="[jsonDoc(&quot;main&quot;)(&quot;humidity&quot;).ToString+&quot;%&quot;]" />
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </ui:ForEach.Body>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:ForEach>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_7" />
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:ForEachRow.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:ForEachRow>
+                              <ui:Break sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Break_1" />
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
+            </ActivityAction>
+          </ui:ExcelApplicationScope.Body>
+        </ui:ExcelApplicationScope>
+      </Sequence>
+    </FlowStep>
+  </Flowchart>
+</Activity>
