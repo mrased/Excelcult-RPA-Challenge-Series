@@ -1,0 +1,346 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="934,701" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="23">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="17">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,137</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,137</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="907,3359" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable1" />
+          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable2" />
+          <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable4" />
+          <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable3" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="865,3267" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.flipkart.com/">
+          <ui:OpenBrowser.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="831,3166" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="789,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="789,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="Pendrive[k(enter)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0a96ca23-f7a1-4731-9a2a-1d144773ecaf" InformativeScreenshot="9153a55d1b56a0db2631fbe72e10c215" Selector="&lt;webctrl name='q' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="789,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Pendrive  Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="801e112ab09f942f330f489086732abf" Selector="&lt;html app='chrome.exe' title='Pendrive - Buy Products Online at Best Price in India - All Categories | Flipkart.com' /&gt;">
+                    <ui:BrowserScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable1]" DisplayName="Extract Structured Data 'DIV  container'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;/row&gt;&lt;column exact='1' name='Model Name' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='a' class='_2cLu-l' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Colour' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='div' class='_1rcHFq' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Price' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='a' class='_1Vfi6u' idx='1'/&gt;&lt;webctrl tag='div' class='_1uv9Cb' idx='1'/&gt;&lt;webctrl tag='div' class='_1vC4OE' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="100" SimulateClick="True">
+                            <ui:ExtractData.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e87ca0f-861a-4fe2-b4ef-cec772992520" InformativeScreenshot="bac43a932a3ba8891df2516ca5090ad6" Selector="&lt;webctrl id='container' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:ExtractData.Target>
+                          </ui:ExtractData>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:BrowserScope.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:BrowserScope>
+                </Sequence>
+                <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable1]" Delimitator="Comma" DisplayName="Write CSV" FilePath="[Directory.GetCurrentDirectory+&quot;\Pendrive Details.csv&quot;]" sap:VirtualizedContainerService.HintSize="789,152" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+                <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,436" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Pendrive  Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="385bb998f2a935246d3e9c4ad7ec684c" Selector="&lt;html app='chrome.exe' title='Pendrive - Buy Products Online at Best Price in India - All Categories | Flipkart.com' /&gt;">
+                    <ui:BrowserScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable2]" DisplayName="Extract Structured Data 'DIV  container'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;/row&gt;&lt;column exact='1' name='Model' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='a' class='_2cLu-l' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Colour' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='div' class='_1rcHFq' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Price' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='a' class='_1Vfi6u' idx='1'/&gt;&lt;webctrl tag='div' class='_1uv9Cb' idx='1'/&gt;&lt;webctrl tag='div' class='_1vC4OE' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_3" MaxNumberOfResults="100" SimulateClick="True">
+                            <ui:ExtractData.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="84e6f6ab-60c7-4af2-8a99-604a73b7fe15" InformativeScreenshot="d95cd399fb36d412b1bf7e5fdb63a21c" Selector="&lt;webctrl id='container' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:ExtractData.Target>
+                          </ui:ExtractData>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:BrowserScope.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:BrowserScope>
+                </Sequence>
+                <ui:AppendCsvFile Encoding="{x:Null}" DataTable="[ExtractDataTable2]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="[Directory.GetCurrentDirectory+&quot;\Pendrive Details.csv&quot;]" sap:VirtualizedContainerService.HintSize="789,132" sap2010:WorkflowViewState.IdRef="AppendCsvFile_4" />
+                <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="789,66" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Pendrive  Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="385bb998f2a935246d3e9c4ad7ec684c" Selector="&lt;html app='chrome.exe' title='Pendrive - Buy Products Online at Best Price in India - All Categories | Flipkart.com' /&gt;">
+                    <ui:BrowserScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable3]" DisplayName="Extract Structured Data 'DIV  container'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;/row&gt;&lt;column exact='1' name='Model' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='a' class='_2cLu-l' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Colour' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='div' class='_1rcHFq' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Price' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='a' class='_1Vfi6u' idx='1'/&gt;&lt;webctrl tag='div' class='_1uv9Cb' idx='1'/&gt;&lt;webctrl tag='div' class='_1vC4OE' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_4" MaxNumberOfResults="100" SimulateClick="True">
+                            <ui:ExtractData.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="84e6f6ab-60c7-4af2-8a99-604a73b7fe15" InformativeScreenshot="d95cd399fb36d412b1bf7e5fdb63a21c" Selector="&lt;webctrl id='container' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:ExtractData.Target>
+                          </ui:ExtractData>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:BrowserScope.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:BrowserScope>
+                </Sequence>
+                <ui:AppendCsvFile Encoding="{x:Null}" DataTable="[ExtractDataTable3]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="[Directory.GetCurrentDirectory+&quot;\Pendrive Details.csv&quot;]" sap:VirtualizedContainerService.HintSize="789,132" sap2010:WorkflowViewState.IdRef="AppendCsvFile_5" />
+                <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="789,66" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Pendrive  Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="385bb998f2a935246d3e9c4ad7ec684c" Selector="&lt;html app='chrome.exe' title='Pendrive - Buy Products Online at Best Price in India - All Categories | Flipkart.com' /&gt;">
+                    <ui:BrowserScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable4]" DisplayName="Extract Structured Data 'DIV  container'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;/row&gt;&lt;column exact='1' name='Model' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='a' class='_2cLu-l' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Colour' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='div' class='_1rcHFq' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Price' attr='text'&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='t-0M7P _2doH3V' idx='1'/&gt;&lt;webctrl tag='div' class='_3e7xtJ' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV hCUpcT' idx='1'/&gt;&lt;webctrl tag='div' class='_1HmYoV _35HD7C' idx='2'/&gt;&lt;webctrl tag='div' class='bhgxx2 col-12-12'/&gt;&lt;webctrl tag='div' class='_3O0U0u' idx='1'/&gt;&lt;webctrl tag='div' idx='2'/&gt;&lt;webctrl tag='div' class='_3liAhj' idx='1'/&gt;&lt;webctrl tag='a' class='_1Vfi6u' idx='1'/&gt;&lt;webctrl tag='div' class='_1uv9Cb' idx='1'/&gt;&lt;webctrl tag='div' class='_1vC4OE' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_5" MaxNumberOfResults="100" SimulateClick="True">
+                            <ui:ExtractData.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="84e6f6ab-60c7-4af2-8a99-604a73b7fe15" InformativeScreenshot="d95cd399fb36d412b1bf7e5fdb63a21c" Selector="&lt;webctrl id='container' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:ExtractData.Target>
+                          </ui:ExtractData>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:BrowserScope.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:BrowserScope>
+                </Sequence>
+                <ui:AppendCsvFile Encoding="{x:Null}" DataTable="[ExtractDataTable4]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="[Directory.GetCurrentDirectory+&quot;\Pendrive Details.csv&quot;]" sap:VirtualizedContainerService.HintSize="789,132" sap2010:WorkflowViewState.IdRef="AppendCsvFile_6" />
+                <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="789,1336" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" Visible="False" WorkbookPath="[Directory.GetCurrentDirectory+&quot;\Pendrive Details.csv&quot;]">
+                  <ui:ExcelApplicationScope.Body>
+                    <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="755,1227" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="sd:DataTable" Name="readCSVData" />
+                          <Variable x:TypeArguments="x:String" Name="sheetName" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ExcelGetWorkbookSheet DisplayName="Get Workbook Sheet" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="ExcelGetWorkbookSheet_1" Index="0" Sheet="[sheetName]" />
+                        <ui:ExcelReadRange AddHeaders="True" DataTable="[readCSVData]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="713,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="[sheetName]">
+                          <ui:ExcelReadRange.Range>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ui:ExcelReadRange.Range>
+                        </ui:ExcelReadRange>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="713,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Before&quot;+sheetName]" />
+                        <ui:ExcelSetRangeColor Color="[System.Drawing.Color.Yellow]" DisplayName="Set Range Color" sap:VirtualizedContainerService.HintSize="713,22" sap2010:WorkflowViewState.IdRef="ExcelSetRangeColor_3" Range="A1:C1" SheetName="[sheetName]" />
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="713,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;After&quot;+sheetName]" />
+                        <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[readCSVData]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="713,710" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                          <ui:ForEachRow.Body>
+                            <ActivityAction x:TypeArguments="sd:DataRow">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="663,563" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:Int32" Name="price" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="621,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[price]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">[Cint(row(2).ToString.Replace("₹",""))]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <If Condition="[price&gt;475]" sap:VirtualizedContainerService.HintSize="621,371" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <If.Then>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="376,224" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:AppendLine DisplayName="Append Line" FileName="[Directory.GetCurrentDirectory+&quot;\Model Names Greater than Price 475.txt&quot;]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[row(0).ToString]" />
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEachRow.Body>
+                        </ui:ForEachRow>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ExcelApplicationScope.Body>
+                </ui:ExcelApplicationScope>
+              </Sequence>
+            </ActivityAction>
+          </ui:OpenBrowser.Body>
+        </ui:OpenBrowser>
+      </Sequence>
+    </FlowStep>
+  </Flowchart>
+</Activity>
