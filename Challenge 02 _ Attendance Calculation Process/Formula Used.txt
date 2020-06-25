@@ -1,0 +1,5 @@
+=(B2*100)/D2
+
+=IF(E2>85,"Excellent", IF(AND(E2<=70,E2>=85),"Good","Average"))
+
+=D2-(B2+C2)
