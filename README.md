@@ -22,3 +22,5 @@ Challenge 08 Link (Inventory Management Process) :- https://www.youtube.com/watc
 Challenge 09 Link (Visitor ID QR Creation Process) :- https://www.youtube.com/watch?v=UOg601mgzOM&feature=emb_logo
 
 Challenge 10 Link (File & Folder Segregation Process) :- https://www.youtube.com/watch?time_continue=118&v=D1c95w2Fq98&feature=emb_logo
+
+Challenge 11 Link (Data Extraction Process Using Regex) :- https://www.youtube.com/watch?time_continue=32&v=oaocVvQzmkg&feature=emb_logo
